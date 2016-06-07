@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/main_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:background="#33475f" />
+
+    <LinearLayout
+        android:id="@+id/ly_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/main_tv_index"
+            style="@style/home_tab_text"
+            android:drawableTop="@drawable/tab_menu_index_ic"
+            android:text="@string/index"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/main_tv_reservation"
+            style="@style/home_tab_text"
+            android:drawableTop="@drawable/tab_menu_reservation_ic"
+            android:text="@string/reservation"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/main_tv_shoppingcart"
+            style="@style/home_tab_text"
+            android:drawableTop="@drawable/tab_menu_cart_ic"
+            android:text="@string/shoppingcart"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/main_tv_me"
+            style="@style/home_tab_text"
+            android:drawableTop="@drawable/tab_menu_me_ic"
+            android:text="@string/me"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="@dimen/small_text_size" />
+
+    </LinearLayout>
+</LinearLayout>

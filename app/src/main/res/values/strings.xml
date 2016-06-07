@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Houselabel</string>
+
+
+    <!-- 底部导航-->
+    <string name="index">首页</string>
+    <string name="reservation">预订</string>
+    <string name="shoppingcart">购物车</string>
+    <string name="me">我的</string>
+
+    <!-- 首页-->
+    <string name="scan">扫一扫</string>
+    <string name="message">消息</string>
+
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
