@@ -10,14 +10,14 @@ import android.view.ViewGroup;
 import com.goobole.houselabel.R;
 
 
-public class MineFragment extends Fragment {
+public class MeFragment extends Fragment {
 
 
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_reservation, null);
+        View view = inflater.inflate(R.layout.fragment_me, null);
         return view;
     }
 }

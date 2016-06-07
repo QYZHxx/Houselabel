@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import com.goobole.houselabel.fragment.CartFragment;
 import com.goobole.houselabel.fragment.HomeFragment;
-import com.goobole.houselabel.fragment.MineFragment;
+import com.goobole.houselabel.fragment.MeFragment;
 import com.goobole.houselabel.fragment.ReservationFragment;
 import com.xys.libzxing.zxing.activity.CaptureActivity;
 
@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.main_tv_me:
                 tv_me.setSelected(true);
                 if (fragmentMe == null) {
-                    fragmentMe = new MineFragment();
+                    fragmentMe = new MeFragment();
                     transaction.add(R.id.main_frameLayout, fragmentMe);
                 } else {
                     transaction.show(fragmentMe);
