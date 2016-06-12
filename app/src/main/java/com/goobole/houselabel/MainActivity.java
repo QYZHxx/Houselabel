@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     };
 
+
     private void initView() {
         manager = getSupportFragmentManager();
         tv_index = (TextView) findViewById(R.id.main_tv_index);

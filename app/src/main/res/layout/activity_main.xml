@@ -13,12 +13,12 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1.5px"
-        android:background="#33475f" />
+        android:background="#8a8a8a" />
 
     <LinearLayout
         android:id="@+id/ly_tab_bar"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="52dp"
         android:background="@color/white"
         android:orientation="horizontal">
 
@@ -28,7 +28,7 @@
             android:drawableTop="@drawable/tab_menu_index_ic"
             android:text="@string/index"
             android:textColor="@drawable/tab_menu_text"
-            android:textSize="@dimen/small_text_size" />
+            android:textSize="@dimen/micro_text_size" />
 
         <TextView
             android:id="@+id/main_tv_reservation"
@@ -36,7 +36,7 @@
             android:drawableTop="@drawable/tab_menu_reservation_ic"
             android:text="@string/reservation"
             android:textColor="@drawable/tab_menu_text"
-            android:textSize="@dimen/small_text_size" />
+            android:textSize="@dimen/micro_text_size" />
 
         <TextView
             android:id="@+id/main_tv_shoppingcart"
@@ -44,7 +44,7 @@
             android:drawableTop="@drawable/tab_menu_cart_ic"
             android:text="@string/shoppingcart"
             android:textColor="@drawable/tab_menu_text"
-            android:textSize="@dimen/small_text_size" />
+            android:textSize="@dimen/micro_text_size" />
 
         <TextView
             android:id="@+id/main_tv_me"
@@ -52,7 +52,7 @@
             android:drawableTop="@drawable/tab_menu_me_ic"
             android:text="@string/me"
             android:textColor="@drawable/tab_menu_text"
-            android:textSize="@dimen/small_text_size" />
+            android:textSize="@dimen/micro_text_size" />
 
     </LinearLayout>
 </LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购物车" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="#ecf0f1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:src="@drawable/cart"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+        <TextView
+            android:textSize="@dimen/small_middle_text_size"
+            android:text="购物车空空如也..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="@color/white"
+                android:text="看收藏"
+                android:layout_width="80dp"
+                android:layout_height="40dp" />
+            <View
+                android:layout_width="40dp"
+                android:layout_height="0dp"></View>
+            <Button
+                android:background="@color/white"
+                android:text="先逛逛"
+                android:layout_width="80dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
