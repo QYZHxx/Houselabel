@@ -1,5 +1,6 @@
 package com.goobole.houselabel.fragment;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.goobole.houselabel.R;
+import com.goobole.houselabel.ui.LoginActivity;
 
 
 public class MeFragment extends Fragment implements View.OnClickListener {
@@ -35,6 +37,7 @@ public class MeFragment extends Fragment implements View.OnClickListener {
         switch (v.getId()){
             case R.id.me_login:
                 Toast.makeText(getContext(), "点击了登陆", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), LoginActivity.class));
                 break;
         }
     }

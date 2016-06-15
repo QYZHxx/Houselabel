@@ -16,6 +16,7 @@ import com.goobole.houselabel.fragment.CartFragment;
 import com.goobole.houselabel.fragment.HomeFragment;
 import com.goobole.houselabel.fragment.MeFragment;
 import com.goobole.houselabel.fragment.ReservationFragment;
+import com.goobole.houselabel.utils.NetworkUtils;
 import com.xys.libzxing.zxing.activity.CaptureActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -122,6 +123,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
             case R.id.main_tv_me:
+                System.out.println( "网络是否可用"+NetworkUtils.isNetworkAvailable(MainActivity.this));
+                System.out.println( "判断当前网络是否是4G网络"+NetworkUtils.is3G(MainActivity.this));
+                System.out.println("Gps是否打开"+ NetworkUtils.isGpsEnabled(MainActivity.this));
+                System.out.println("判断当前网络是否是wifi网络"+ NetworkUtils.isWifi(MainActivity.this));
+                System.out.println( "wifi是否打开"+NetworkUtils.isWifiEnabled(MainActivity.this));
+                NetworkUtils.networkStateTips(MainActivity.this);
+
                 tv_me.setSelected(true);
                 if (fragmentMe == null) {
                     fragmentMe = new MeFragment();
